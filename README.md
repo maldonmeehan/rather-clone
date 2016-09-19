@@ -1,24 +1,49 @@
-# README
+# Rails | AJAX | Would you rather...? (Two-day Project)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By Cory Olson and Maldon Meehan
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+Create your version of a "Would you rather…?" site like rrrather.com. The idea is that users are posed tough questions and offered the option to answer and see how others responded when asked the same questions. Remember the goal for today is to use AJAX. If you complete the first three user stories (including testing and implementing AJAX), create additional user stories to continue to enhance your site with additional AJAX features, other tools you have previously learned or new processes that you'd like to learn.
 
-* System dependencies
+Here are the user stories to begin:
 
-* Configuration
+As a user, I want to be able to see a list of questions to vote on so that I can have fun taking a survey. (To begin, consider text only questions, that record the answer and add an indicator for which was selected (text or css).)
+As a user, I want to be able to choose an answer so that I can see how many others also made the same selection as I did. (Use AJAX to process answer and return totals for each response. Hint: consider using group and count methods.)
+As a user, I want to be able to add a comment to a question to share my opinion about the selection that I made. (Use AJAX to show comment fields and process values.)
 
-* Database creation
+## Installation
 
-* Database initialization
+* `git clone `
+* `gem install rails`
+* `bundle install`
+* `rake db:create`
+* `rake db:migrate`
+* `rake db:test:prepare`
 
-* How to run the test suite
+## Running / Development
 
-* Services (job queues, cache servers, search engines, etc.)
+* Start the project with `rails server`
+* Visit your app at [http://localhost:3000](http://localhost:3000).
 
-* Deployment instructions
+## Known Issues/Bugs
 
-* ...
+* None.
+
+## Support and contact details
+
+Please contact us with any questions, concerns, or ideas.
+
+## Technologies Used
+
+* Ruby
+* Rails
+* PostgreSQL
+* HTML/CSS
+* Bootstrap
+
+### License
+
+MIT License
+
+Copyright (c) 2016  **Cory Olson and Maldon Meehan**
