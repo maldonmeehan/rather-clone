@@ -1,0 +1,10 @@
+<% @questions.each do | question |  %>
+  <div class="rather-title">
+    <p>Would you rather....</p>
+  </div>
+    <% question.answers.each do |answer| %>
+    <div class="rather-choice">
+      <%= answer.content %>
+    </div>
+    <% end %>
+<% end %>

@@ -2,6 +2,7 @@ class QuestionsController < ApplicationController
   before_action :authenticate_user!, :except => [:index]
   def index
     @questions = Question.all
+    @question = Question.new
   end
 
   def new
@@ -16,7 +17,12 @@ class QuestionsController < ApplicationController
         Answer.new(content: params[:content2])
     ]
     if @question.save
-      redirect_to root_url
+      @questions = Question.all
+      respond_to do |format|
+        format.html { redirect_to root_url }
+        format.js
+      end
+
     else
       render :new
     end
