@@ -1,0 +1,10 @@
+<%= render('layouts/errors', :object => @question) %>
+
+<p>Would you rather...</p>
+<%= form_tag '/questions' do |f| %>
+<%= label_tag :content1 %>
+<%= text_field_tag :content1 %>
+<%= label_tag :content2 %>
+<%= text_field_tag :content2 %>
+<%= submit_tag %>
+<% end %>

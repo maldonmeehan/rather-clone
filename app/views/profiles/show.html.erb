@@ -1,0 +1,9 @@
+<h1>Profile</h1>
+<h2>Name</h2>
+<%= @user.profile.name %>
+<p>Country</p>
+<%= @user.profile.country %>
+<p>Gender</p>
+<%= @user.profile.gender %>
+<p>Avatar</p>
+<%= image_tag(current_user.profile.avatar.url(:medium))%>
