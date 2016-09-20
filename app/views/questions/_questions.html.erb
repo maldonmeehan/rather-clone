@@ -4,7 +4,13 @@
   </div>
     <% question.answers.each do |answer| %>
     <div class="rather-choice">
-      <%= answer.content %>
+      <div class="answer-display">
+        <%= answer.content %>
+      </div>
+      <div class="answer-vote-display" id="answer-id-<%= answer.id %>">
+        <%= answer.votes.count %>
+      </div>
+      <%= button_to "Vote", question_answer_votes_path(question, answer), remote: true, params: {:current_user => current_user} %>
     </div>
     <% end %>
 <% end %>
