@@ -5,9 +5,9 @@ class QuestionsController < ApplicationController
     @question = Question.new
   end
 
-  def new
-    @question = Question.new
-  end
+  # def new
+  #   @question = Question.new
+  # end
 
   def create
 
@@ -24,7 +24,12 @@ class QuestionsController < ApplicationController
       end
 
     else
-      render :new
+      @questions = Question.all
+      respond_to do |format|
+        flash[:notice] = "Failed to save new question"
+        format.html { redirect_to root_url }
+        format.js
+      end
     end
   end
 
