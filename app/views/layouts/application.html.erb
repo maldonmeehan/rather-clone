@@ -11,7 +11,9 @@
   <body>
     <div class="nav">
       <% if user_signed_in? %>
-      <%= link_to current_user.profile.name, profile_path(current_user.profile) %>
+        <% if current_user.profile %>
+          <%= link_to current_user.profile.name, profile_path(current_user.profile) %>
+        <% end %>
       <%= link_to "Logout", destroy_user_session_path, method: 'delete'  %>
       <% else %>
       <%= link_to "Login", new_user_session_path  %>
