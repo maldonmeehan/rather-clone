@@ -24,6 +24,7 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'faker'
   gem 'poltergeist'
+  gem 'database_cleaner'
 end
 
 group :development do

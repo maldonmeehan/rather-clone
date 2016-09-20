@@ -32,8 +32,7 @@ describe "tests the question process" do
     fill_in "content1", with: ""
     fill_in "content2", with: ""
     click_button "Save changes"
-    expect(page).to have_content("")
-    expect(page).to have_content("")
+    expect(page).to have_content("Failed to save new question")
     Warden.test_reset!
   end
 end
