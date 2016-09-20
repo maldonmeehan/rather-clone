@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+20.times do | i |
+  user = User.new
+  user.email = Faker::Internet.email
+  user.password = "test_password"
+  user.password_confirmation = "test_password"
+  user.save!
+
+  profile = Profile.new
+  profile.name = Faker::Name.name
+  profile.country = Faker::Address.country
+  profile.gender = Faker::StarWars.specie
+  profile.user = user
+  profile.save!
+  answer1 = Answer.new(content: Faker::Hipster.sentence(3, false, 4))
+  answer2 = Answer.new(content: Faker::Hipster.sentence(3, false, 4))
+  question = Question.create(profile: profile, answers: [answer1, answer2])
+end
