@@ -13,9 +13,11 @@ class QuestionsController < ApplicationController
 
     @question = Question.new(profile: current_user.profile)
     @question.answers = [
-        Answer.new(content: params[:content1]),
-        Answer.new(content: params[:content2])
+        Answer.new(:content => question_params["content1"]),
+        Answer.new(:content => question_params["content2"]),
+
     ]
+    # binding.pry
     if @question.save
       @questions = Question.all
       respond_to do |format|
@@ -37,6 +39,6 @@ class QuestionsController < ApplicationController
   private
 
   def question_params
-    params.require(:profile).permit(:content1, :content2)
+    params.permit(:content1, :content2)
   end
 end
