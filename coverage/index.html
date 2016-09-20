@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-09-20T14:13:45-07:00">2016-09-20T14:13:45-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-09-20T14:36:48-07:00">2016-09-20T14:36:48-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.12%</span></span>
+    (<span class="covered_percent"><span class="green">94.85%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.16
+         1.22
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>57</b> files in total.
-    <b>259</b> relevant lines. 
-    <span class="green"><b>236</b> lines covered</span> and
-    <span class="red"><b>23</b> lines missed </span>
+    <b>272</b> relevant lines. 
+    <span class="green"><b>258</b> lines covered</span> and
+    <span class="red"><b>14</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -117,17 +117,17 @@
         <td>21</td>
         <td>21</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#ac1365782bad72c51c33d0ebaf6bf3d92bf8c302" class="src_link" title="app/controllers/votes_controller.rb">app/controllers/votes_controller.rb</a></td>
-        <td class="red strong">18.18 %</td>
+        <td class="green strong">100.0 %</td>
         <td>17</td>
         <td>11</td>
-        <td>2</td>
-        <td>9</td>
-        <td>0.2</td>
+        <td>11</td>
+        <td>0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
@@ -543,9 +543,9 @@
       <tr>
         <td class="strong"><a href="#72dbd0fdb27f03e3f36b9510dcb45e347f9c7bab" class="src_link" title="spec/features/votes_controller_spec.rb">spec/features/votes_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>2</td>
-        <td>2</td>
+        <td>23</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -617,7 +617,7 @@
         <td>24</td>
         <td>24</td>
         <td>0</td>
-        <td>2.8</td>
+        <td>3.0</td>
       </tr>
       
     </tbody>
@@ -1070,14 +1070,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="4">
+          <span class="hits">4</span>
           
           <code class="ruby">    @questions = Question.all</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
           
           <code class="ruby">    @question = Question.new</code>
         </li>
@@ -1323,11 +1323,11 @@
         <div class="source_table" id="ac1365782bad72c51c33d0ebaf6bf3d92bf8c302">
   <div class="header">
     <h3>app/controllers/votes_controller.rb</h3>
-    <h4><span class="red">18.18 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>11</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>9</b> lines missed.</span>
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -1352,56 +1352,56 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="4">
-          
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
           <code class="ruby">    @current_user = User.find(params[:current_user])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">    @answer = Answer.find(params[:answer_id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby">    vote = Vote.new</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">    vote.profile = current_user.profile</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">    vote.answer_id = @answer.id</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">    if vote.save!</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
-          
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
           <code class="ruby">      respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">        format.html { redirect_to root_url }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">        format.js</code>
         </li>
@@ -5363,7 +5363,7 @@
         <li class="never" data-hits="" data-linenumber="3">
           
           
-          <code class="ruby">    </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -5777,8 +5777,8 @@
     <h3>spec/features/votes_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5801,16 +5801,124 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">RSpec.describe VotesController, type: :controller do</code>
+          <code class="ruby">describe &quot;tests the vote process&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;will add a vote to the first item&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    profile = FactoryGirl.create(:profile, user: user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    question = FactoryGirl.create(:question, profile: profile)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    answer1 = FactoryGirl.create(:answer)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    answer2 = FactoryGirl.create(:answer)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    question.answers = [answer1, answer2]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    question.save</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    vote = FactoryGirl.create(:vote, profile: profile, answer: answer1)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(user, :scope =&gt; :user, :run_callbacks =&gt; false)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit questions_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_button &quot;vote-id-#{answer1.id}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;will add a vote to the second item&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>
@@ -6422,14 +6530,14 @@
           <code class="ruby">  config.around(:each) do |example|</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="44">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="17" data-linenumber="44">
+          <span class="hits">17</span>
           
           <code class="ruby">    DatabaseCleaner.cleaning do</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="45">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="17" data-linenumber="45">
+          <span class="hits">17</span>
           
           <code class="ruby">      example.run</code>
         </li>
@@ -6578,8 +6686,8 @@
           <code class="ruby">  config.after :each do</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="70">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="17" data-linenumber="70">
+          <span class="hits">17</span>
           
           <code class="ruby">    Warden.test_reset!</code>
         </li>
