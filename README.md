@@ -14,7 +14,7 @@ As a user, I want to be able to add a comment to a question to share my opinion 
 
 ## Installation
 
-* `git clone `
+* `git clone https://github.com/maldonmeehan/rather-clone.git`
 * `gem install rails`
 * `bundle install`
 * `rake db:create`
