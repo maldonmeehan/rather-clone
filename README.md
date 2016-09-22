@@ -19,6 +19,7 @@ As a user, I want to be able to add a comment to a question to share my opinion 
 * `bundle install`
 * `rake db:create`
 * `rake db:migrate`
+* `rake db:seed`
 * `rake db:test:prepare`
 
 ## Running / Development
@@ -38,6 +39,8 @@ Please contact us with any questions, concerns, or ideas.
 
 * Ruby
 * Rails
+* Devise
+* AJAX
 * PostgreSQL
 * HTML/CSS
 * Bootstrap
