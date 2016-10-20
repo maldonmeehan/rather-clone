@@ -18,8 +18,8 @@ As a user, I want to be able to add a comment to a question to share my opinion 
 * `gem install rails`
 * `bundle install`
 * `rake db:create`
+* `rails db:migrate`
 * `rake db:seed`
-* `rake db:migrate`
 * `rake db:test:prepare`
 
 ## Running / Development
